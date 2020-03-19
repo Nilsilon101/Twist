@@ -11,7 +11,6 @@ Elvis hat vor einiger Zeit einen interessanten Artikel gelesen: Wenn in einem Te
 
 
 Elvis hat eine Idee: Um seine privaten Nachrichten vor Mitlesen durch Maschinen zu sichern, möchte er sie „twisten“. Denn: Menschen können seine Nachrichten trotzdem noch lesen, aber Maschinen werden in die Irre geführt.
-> Hilf Elvis und schreibe ein Programm, das ein eingebenes Wort twistet.
 
 ERWEITERUNG
 
