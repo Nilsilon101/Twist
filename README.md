@@ -3,6 +3,7 @@ Wichtig: Vor dem Ausführen des Quellcodes muss der Path der Wörterliste Datei 
 
 ABGABE
 Name: Nils Steffien (FA91)
+! Die PAP Abgabe für twist() befindet sich im Ordner Twist\PAP Abgabe\
 
 Programm, um gegeben Wörter zu twisten oder enttwisten.
 Elvis hat vor einiger Zeit einen interessanten Artikel gelesen: Wenn in einem Text die Buchstaben jedes Wortes zufällig umgeordnet werden, der erste und letzte Buchstabe aber beibehalten werden, dann können Menschen den Text oft trotzdem noch lesen. Elvis, ein begnadeter Tänzer, nennt dieses Umordnen „Twisten“. 
