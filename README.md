@@ -2,7 +2,7 @@
 Wichtig: Vor dem Ausführen des Quellcodes muss der Path der Wörterliste Datei direkt am Anfang des Codes angepasst werden!
 
 ABGABE
-Name: Nils Steffien (FA91)
+Name: Nils Steffien (FA91)\n
 ! Die PAP Abgabe für twist() befindet sich im Ordner Twist\PAP Abgabe\
 
 Programm, um gegeben Wörter zu twisten oder enttwisten.
