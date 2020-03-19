@@ -1,6 +1,6 @@
 # Twist
 Wichtig: Vor dem Ausführen des Quellcodes muss der Path der Wörterliste Datei direkt am Anfang des Codes angepasst werden!
-! Die PAP Abgabe für twist() befindet sich im Ordner Twist\PAP Abgabe\
+         Die PAP Abgabe für twist() befindet sich im Ordner Twist\PAP Abgabe\
 
 ABGABE
 Name: Nils Steffien (FA91)
