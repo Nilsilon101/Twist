@@ -1,0 +1,11 @@
+C:\Users\Nils\source\repos\Twist\Twist\obj\Debug\netcoreapp3.1\Twist.csprojAssemblyReference.cache
+C:\Users\Nils\source\repos\Twist\Twist\obj\Debug\netcoreapp3.1\Twist.AssemblyInfoInputs.cache
+C:\Users\Nils\source\repos\Twist\Twist\obj\Debug\netcoreapp3.1\Twist.AssemblyInfo.cs
+C:\Users\Nils\source\repos\Twist\Twist\bin\Debug\netcoreapp3.1\Twist.exe
+C:\Users\Nils\source\repos\Twist\Twist\bin\Debug\netcoreapp3.1\Twist.deps.json
+C:\Users\Nils\source\repos\Twist\Twist\bin\Debug\netcoreapp3.1\Twist.runtimeconfig.json
+C:\Users\Nils\source\repos\Twist\Twist\bin\Debug\netcoreapp3.1\Twist.runtimeconfig.dev.json
+C:\Users\Nils\source\repos\Twist\Twist\bin\Debug\netcoreapp3.1\Twist.dll
+C:\Users\Nils\source\repos\Twist\Twist\bin\Debug\netcoreapp3.1\Twist.pdb
+C:\Users\Nils\source\repos\Twist\Twist\obj\Debug\netcoreapp3.1\Twist.dll
+C:\Users\Nils\source\repos\Twist\Twist\obj\Debug\netcoreapp3.1\Twist.pdb
