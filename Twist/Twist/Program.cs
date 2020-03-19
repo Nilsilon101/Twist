@@ -7,7 +7,7 @@ namespace Twist
     class Program
     {
         // Dieser Path muss an den Dateipfad der Wörterliste angepasst werden!
-        const string NAME_OF_WORTSCHATZ_FILE = "C:/Users/Nils/source/repos/Twist/Twist/woerterliste.txt";
+        const string PATH_TO_WORTSCHATZ_FILE = "C:/Users/Nils/source/repos/Twist/Twist/woerterliste.txt";
 
         static string[] wortschatz;
         static bool isTwistMode;
@@ -42,7 +42,8 @@ namespace Twist
                 String[] einzelergebnis;
                 if (isTwistMode)
                 {
-                    einzelergebnis = twist(wort);
+                    einzelergebnis = new string[1];
+                    einzelergebnis[0] = twist(wort);
                 } else
                 {
                     einzelergebnis = enttwist(wort.ToLower());
@@ -189,30 +190,28 @@ namespace Twist
         /// </summary>
         /// <param name="str"> Zu twistenden String </param>
         /// <returns> Getwisteter String </returns>
-        static String[] twist(string str)
+        static String twist(String str)
         {
-            String[] twistArr = new String[1];
+            String result = "";
             // Wenn String nur aus Nummern besteht oder weniger als 4 Buchstaben enthält, dann kann es nicht getwistet werden 
-            // (da nur ein Buchstabe im mittleren Teil) und wird einfach als Lösung direkt hinzugefügt
+            // (da nur ein Buchstabe im mittleren Teil) und wird einfach zurückgegeben
             if (isDigitsOnly(str) || str.Length <= 3)
             {
-                twistArr[0] = str;
+                result = str;
             } 
             else
             {
+                char[] strArr = str.ToCharArray();
+
                 // Den mittleren Teil ohne Anfangs- und Endbuchstabe abtrennen und shufflen / vermischen
                 String midStr = str.Substring(1, str.Length - 2);
-                String midShuffleStr = shuffle(midStr);
+                midStr = shuffle(midStr);
 
                 // Den Anfangs- und Endbuchstaben an den vermischten String wieder anhängen.
-                char[] enttwistArr = str.ToCharArray();
-                String twist = enttwistArr[0] + midShuffleStr + enttwistArr[enttwistArr.Length - 1];
-
-                // Ergebnis in ein Array schreiben, um in der Main Methode ein einheitliches Ergebnis der Twist und Enttwist Methode zurückgegeben wird.
-                twistArr[0] = twist;
+                result = strArr[0] + midStr + strArr[strArr.Length - 1];
             }
 
-            return twistArr;
+            return result;
         }
 
         /// <summary>
@@ -222,18 +221,18 @@ namespace Twist
         /// <returns> Vermischter String </returns>
         static String shuffle(String str)
         {
-            char[] wortArr = str.ToCharArray();
             Random rng = new Random();
-            int index = wortArr.Length;
+            char[] strArr = str.ToCharArray();
+            int index = strArr.Length;
             while (index > 1)
             {
                 index--;
                 int newNo = rng.Next(index + 1);
-                var value = wortArr[newNo];
-                wortArr[newNo] = wortArr[index];
-                wortArr[index] = value;
+                var value = strArr[newNo];
+                strArr[newNo] = strArr[index];
+                strArr[index] = value;
             }
-            return new string(wortArr);
+            return new String(strArr);
         }
 
         /// <summary>
